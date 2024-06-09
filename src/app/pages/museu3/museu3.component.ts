@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-museu3',
@@ -6,4 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./museu3.component.css']
 })
 export class Museu3Component {
+  rawzecy: string = `<a href="https://example.com" target="_blank">Example</a>`;
 }
+@NgModule({
+  declarations: [Museu3Component],
+  imports: [],
+  exports: [Museu3Component]
+})
+export class Museu3Module {}

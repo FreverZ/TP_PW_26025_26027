@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -8,3 +8,9 @@ import { Component } from '@angular/core';
 export class LoginComponent {
   rawu9qv: string = '<a href="https://example.com" target="_blank">Example</a>';
 }
+
+@NgModule({
+  declarations: [LoginComponent],
+  exports: [LoginComponent]
+})
+export class LoginModule {}

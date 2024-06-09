@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-register',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  rawqzys: string = ' ';
+  rawu9qv: string = '<a href="https://example.com" target="_blank">Example</a>';
 }
+@NgModule({
+  declarations: [RegisterComponent],
+  exports: [RegisterComponent]
+})
+export class RegisterModule {}
+

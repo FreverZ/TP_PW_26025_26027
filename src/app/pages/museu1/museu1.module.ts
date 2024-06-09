@@ -1,21 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
 import { Museu1Component } from './museu1.component';
-
-const routes: Routes = [
-  {
-    path: '',
-    component: Museu1Component
-  }
-];
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [Museu1Component],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes)
-  ],
+  imports: [CommonModule, SharedModule],
   exports: [Museu1Component]
 })
 export class Museu1Module { }

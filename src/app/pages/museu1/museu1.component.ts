@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-museu1',
@@ -6,4 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./museu1.component.css']
 })
 export class Museu1Component {
+  rawu11s: string = `<a href="https://example.com" target="_blank">Example</a>`;
 }
+
+@NgModule({
+  declarations: [Museu1Component],
+  imports: [],
+  exports: [Museu1Component]
+})
+export class Museu1Module {}

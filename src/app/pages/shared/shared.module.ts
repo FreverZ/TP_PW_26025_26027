@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SolidButtonComponent } from './solid-button/solid-button.component';
 import { PlaceCardComponent } from './place-card/place-card.component';
+import { SolidButtonComponent } from './solid-button/solid-button.component';
 
 @NgModule({
   declarations: [
-    SolidButtonComponent,
-    PlaceCardComponent
+    PlaceCardComponent,
+    SolidButtonComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    SolidButtonComponent,
-    PlaceCardComponent
+    PlaceCardComponent,
+    SolidButtonComponent
   ]
 })
 export class SharedModule { }
