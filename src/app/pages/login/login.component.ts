@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  rawu9qv: string = '<a href="https://example.com" target="_blank">Example</a>';
 }

@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'museu1', component: Museu1Component },
   { path: 'museu2', component: Museu2Component },
   { path: 'museu3', component: Museu3Component },
-  { path: '**', component: NotFoundComponent },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

@@ -5,15 +5,16 @@ import { RegisterComponent } from './register.component';
 import { SharedModule } from '../shared/shared.module';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: RegisterComponent,
-  },
+  { path: 'register', component: RegisterComponent }
 ];
 
 @NgModule({
   declarations: [RegisterComponent],
-  imports: [CommonModule, RouterModule.forChild(routes), SharedModule],
-  exports: [RegisterComponent],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    SharedModule
+  ],
+  exports: [RegisterComponent]
 })
-export class RegisterModule {}
+export class RegisterModule { }
