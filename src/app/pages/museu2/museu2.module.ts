@@ -16,6 +16,6 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes)
   ],
-  exports: [Museu2Component],
+  exports: [Museu2Component]
 })
 export class Museu2Module { }

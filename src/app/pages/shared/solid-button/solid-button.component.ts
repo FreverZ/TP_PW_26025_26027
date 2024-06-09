@@ -7,5 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class SolidButtonComponent {
   @Input() button: string = '';
-  @Input() rootClassName: string = '';
 }
