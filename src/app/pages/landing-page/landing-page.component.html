@@ -1,71 +1,80 @@
 <div class="landing-page-container">
     <div class="landing-page-top-container">
-        <div class="landing-page-navbar">
-            <h1 class="landing-page-logo">Museus de Portugal</h1>
-            <div class="landing-page-container1">
-                <div class="landing-page-right-side">
-                    <div class="landing-page-links-container">
-                        <button class="btn landing-page-header-text" routerLink="/login">Login</button>
-                        <button class="btn landing-page-header-text" routerLink="/register">Registar</button>
-                    </div>
-                </div>
+      <div class="landing-page-navbar">
+        <h1 class="landing-page-logo">Museus de Portugal</h1>
+        <div class="landing-page-container1">
+          <div class="landing-page-right-side">
+            <div class="landing-page-links-container">
+              <button class="btn landing-page-header-text" routerLink="/login">Login</button>
+              <button class="btn landing-page-header-text" routerLink="/register">Registar</button>
             </div>
+          </div>
         </div>
-        <div class="landing-page-hero">
-            <div class="landing-page-content-container">
-                <h1 class="landing-page-text">
-                    <span class="Heading" style="font-weight: bold; font-family: sans-serif;">Descubra Museus</span>
-                    <br />
-                </h1>
-                <h2 class="landing-page-subheading">
-                    <span class="Subheading" style="font-family: sans-serif;">
-                        Explorando Culturas e Histórias pelo Mundo
-                    </span>
-                    <br />
-                </h2>
-                <span class="landing-page-text" style="padding-bottom: 20px;">
-                    <span>Inspire-se. Aprenda. Viva a Arte.</span>
-                    <br/>
-                </span>
-                <button class="btn-container btn-custom btn" routerLink="/museums">Explorar Mais</button>
-            </div>
+      </div>
+      <div class="landing-page-hero">
+        <div class="landing-page-content-container">
+          <h1 class="landing-page-text">
+            <span class="Heading" style="font-weight: bold; font-family: sans-serif;">Descubra Museus</span>
+            <br />
+          </h1>
+          <h2 class="landing-page-subheading">
+            <span class="Subheading" style="font-family: sans-serif;">
+              Explorando Culturas e Histórias pelo Mundo
+            </span>
+            <br />
+          </h2>
+          <span class="landing-page-text" style="padding-bottom: 20px;">
+            <span>Inspire-se. Aprenda. Viva a Arte.</span>
+            <br />
+          </span>
+          <button class="btn-container btn-custom btn" routerLink="/museu1">Museu 1</button>
+          <button class="btn-container btn-custom btn" routerLink="/museu2">Museu 2</button>
+          <button class="btn-container btn-custom btn" routerLink="/museu3">Museu 3</button>
         </div>
+      </div>
     </div>
     <div id="main-section" class="landing-page-main">
-        <h1 class="cardsH1">Os mais conhecidos</h1>
-        <span class="landing-page-text" style="color: black;">Recomendado</span>
-        <div class="landing-page-cards-container" style="padding-bottom: 50px; padding-top: 50px;">
-            <place-card 
-                [image]="'https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg'" 
-                [imageAlt]="'https://cdn.discordapp.com/attachments/1239610282699919512/1249711260698677340/logo.png'" 
-                [city]="'Lixoboa'" 
-                [description]="'Qualquer merda, lá é so ratos de qlqr maneira'">
-            </place-card>
-            <place-card></place-card>
-            <place-card></place-card>
-            <!-- Repeat similar structure for other museums -->
-        </div>
-        <div class="landing-page-cards-container" style="padding-bottom: 50px;">
-            <!-- Additional museum cards go here -->
-        </div>
+      <h1 class="cardsH1">Os mais conhecidos</h1>
+      <span class="landing-page-text" style="color: black;">Recomendado</span>
+      <div class="landing-page-cards-container" style="padding-bottom: 50px; padding-top: 50px;">
+        <place-card
+          [image]="'https://cdn.britannica.com/51/194651-050-74F7F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg'"
+          [imageAlt]="'Imagem de um museu'"
+          [city]="'Lisboa'"
+          [description]="'Descrição do museu em Lisboa'">
+        </place-card>
+        <place-card
+          [image]="'https://cdn.britannica.com/51/194651-050-74F7F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg'"
+          [imageAlt]="'Imagem de um museu'"
+          [city]="'Porto'"
+          [description]="'Descrição do museu no Porto'">
+        </place-card>
+        <place-card
+          [image]="'https://cdn.britannica.com/51/194651-050-74F7F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg'"
+          [imageAlt]="'Imagem de um museu'"
+          [city]="'Coimbra'"
+          [description]="'Descrição do museu em Coimbra'">
+        </place-card>
+      </div>
     </div>
     <div class="landing-page-footer">
-        <div class="landing-page-menu">
-            <img style="height: 100px;" src="https://cdn.discordapp.com/attachments/1239610282699919512/1249711260698677340/logo.png" class="footer-logo" />
-            <h1 style="font-weight: bold;">Museus de<br/>Portugal</h1>
-            <div class="landing-page-links-container">
-                <div class="landing-page-container3">
-                    <a routerLink="/pricing" class="landing-page-link">Pacotes de Tour<br></a>
-                    <a routerLink="/special-offers" class="landing-page-link">Ofertas Especializadas<br></a>
-                    <a routerLink="/promotions" class="landing-page-link">Promoções<br/></a>
-                </div>
-                <div class="landing-page-container3">
-                    <a routerLink="/about-us" class="landing-page-link">Sobre Nós<br></a>
-                    <a routerLink="/faq" class="landing-page-link">FAQ<br></a>
-                    <a routerLink="/terms-and-conditions" class="landing-page-link">Termos e Condições<br></a>
-                    <a routerLink="/contact-us" class="landing-page-link">Contacta-nos</a>
-                </div>
-            </div>
+      <div class="landing-page-menu">
+        <img style="height: 100px;" src="https://cdn.discordapp.com/attachments/1239610282699919512/1249711260698677340/logo.png" class="footer-logo" />
+        <h1 style="font-weight: bold;">Museus de<br />Portugal</h1>
+        <div class="landing-page-links-container">
+          <div class="landing-page-container3">
+            <a routerLink="/pricing" class="landing-page-link">Pacotes de Tour<br /></a>
+            <a routerLink="/special-offers" class="landing-page-link">Ofertas Especializadas<br /></a>
+            <a routerLink="/promotions" class="landing-page-link">Promoções<br /></a>
+          </div>
+          <div class="landing-page-container3">
+            <a routerLink="/about-us" class="landing-page-link">Sobre Nós<br /></a>
+            <a routerLink="/faq" class="landing-page-link">FAQ<br /></a>
+            <a routerLink="/terms-and-conditions" class="landing-page-link">Termos e Condições<br /></a>
+            <a routerLink="/contact-us" class="landing-page-link">Contacta-nos</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+  

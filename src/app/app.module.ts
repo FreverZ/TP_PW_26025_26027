@@ -13,6 +13,8 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
 import { Museu1Component } from './pages/museu1/museu1.component';
 import { Museu2Component } from './pages/museu2/museu2.component';
 import { Museu3Component } from './pages/museu3/museu3.component';
+import { LoginComponent } from './pages/login/login.component';
+import { PlaceCardComponent } from './components/place-card/place-card.component'; 
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { Museu3Component } from './pages/museu3/museu3.component';
     ReviewsComponent,
     Museu1Component,
     Museu2Component,
-    Museu3Component
+    Museu3Component,
+    LoginComponent,
+    PlaceCardComponent // Declarando o PlaceCardComponent
   ],
   imports: [
     BrowserModule,
