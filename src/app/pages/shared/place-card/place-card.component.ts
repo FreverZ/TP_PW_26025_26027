@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./place-card.component.css']
 })
 export class PlaceCardComponent {
+  @Input() image: string;
   @Input() city: string;
   @Input() description: string;
 }

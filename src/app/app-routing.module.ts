@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'not-found', component: NotFoundComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'landing-page', component: LandingPageComponent },
+  { path: 'home', component: LandingPageComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
