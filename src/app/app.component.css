@@ -1,0 +1,19 @@
+nav {
+    margin: 20px 0;
+  }
+  
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  hr {
+    margin: 20px 0;
+  }
+  

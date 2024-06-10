@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "your-project-name": {
+    "TP_PM_26025_26027": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,17 +13,19 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/your-project-name",
+            "outputPath": "dist/TP_PM_26025_26027",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/app/styles.css"
+              "src/app/styles.css",
+              "./node_modules/animate.css/animate.css"
             ],
             "scripts": []
           },
@@ -57,18 +59,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "your-project-name:build"
+            "browserTarget": "TP_PM_26025_26027:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "your-project-name:build:production"
+              "browserTarget": "TP_PM_26025_26027:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "your-project-name:build"
+            "browserTarget": "TP_PM_26025_26027:build"
           }
         },
         "test": {
@@ -83,7 +85,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/app/styles.css"
+              "src/app/styles.css",
+              "./node_modules/animate.css/animate.css"
             ],
             "scripts": []
           }
@@ -93,7 +96,8 @@
           "options": {
             "tsConfig": [
               "tsconfig.app.json",
-              "tsconfig.spec.json"
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -103,8 +107,5 @@
       }
     }
   },
-  "defaultProject": "your-project-name",
-  "cli": {
-    "analytics": "3e4643f2-6b27-4214-946b-facdba4c3c00"
-  }
+  "defaultProject": "TP_PM_26025_26027"
 }
