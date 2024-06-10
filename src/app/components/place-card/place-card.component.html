@@ -1,8 +1,5 @@
-<div class="place-card-container">
-  <img [attr.alt]="imageAlt" [attr.src]="image" class="place-card-image" />
-  <div class="place-card-container1">
-    <span class="place-card-text">{{ city }}</span>
-    <span class="place-card-text1">{{ description }}</span>
-    <outline-button button1="Descobrir mais"></outline-button>
-  </div>
+<div class="place-card">
+  <img [src]="image" [alt]="imageAlt" class="place-card-image">
+  <h2 class="place-card-city">{{ city }}</h2>
+  <p class="place-card-description">{{ description }}</p>
 </div>

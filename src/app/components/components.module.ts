@@ -1,50 +1,52 @@
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
-import { RouterModule } from '@angular/router'
-import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
-import { Hero } from './hero/hero.component'
-import { Stats } from './stats/stats.component'
-import { Description } from './description/description.component'
-import { SolidButton } from './solid-button/solid-button.component'
-import { OutlineButton } from './outline-button/outline-button.component'
-import { PlaceCard } from './place-card/place-card.component'
-import { Gallery } from './gallery/gallery.component'
-import { Reviews } from './reviews/reviews.component'
-import { Pricing } from './pricing/pricing.component'
-import { Contact } from './contact/contact.component'
-import { SignIn } from './sign-in/sign-in.component'
-import { Register1 } from './register1/register1.component'
+import { HeroComponent } from './hero/hero.component';
+import { PlaceCardComponent } from './place-card/place-card.component';
+import { SolidButtonComponent } from './solid-button/solid-button.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { OutlineButtonComponent } from './outline-button/outline-button.component';
+import { ContactComponent } from './contact/contact.component';
+import { DescriptionComponent } from './description/description.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { RegisterComponent } from './register1/register1.component';
+import { ReviewsComponent } from './reviews/reviews.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   declarations: [
-    Hero,
-    Stats,
-    Description,
-    SolidButton,
-    OutlineButton,
-    PlaceCard,
-    Gallery,
-    Reviews,
-    Pricing,
-    Contact,
-    SignIn,
-    Register1,
+    HeroComponent,
+    PlaceCardComponent,
+    SolidButtonComponent,
+    GalleryComponent,
+    OutlineButtonComponent,
+    ContactComponent,
+    DescriptionComponent,
+    PricingComponent,
+    RegisterComponent,
+    ReviewsComponent,
+    SignInComponent,
+    StatsComponent
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [
+    CommonModule,
+    FormsModule
+  ],
   exports: [
-    Hero,
-    Stats,
-    Description,
-    SolidButton,
-    OutlineButton,
-    PlaceCard,
-    Gallery,
-    Reviews,
-    Pricing,
-    Contact,
-    SignIn,
-    Register1,
-  ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    HeroComponent,
+    PlaceCardComponent,
+    SolidButtonComponent,
+    GalleryComponent,
+    OutlineButtonComponent,
+    ContactComponent,
+    DescriptionComponent,
+    PricingComponent,
+    RegisterComponent,
+    ReviewsComponent,
+    SignInComponent,
+    StatsComponent
+  ]
 })
-export class ComponentsModule {}
+export class ComponentsModule { }

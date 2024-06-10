@@ -7,6 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class PlaceCardComponent {
   @Input() city: string;
-  @Input() image: string;
   @Input() description: string;
 }

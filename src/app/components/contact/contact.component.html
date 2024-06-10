@@ -1,25 +1,15 @@
 <div class="contact-container thq-section-padding" [ngClass]="rootClassName">
-  <div class="contact-max-width thq-section-max-width">
-    <div class="contact-content thq-flex-row">
-      <div class="contact-content1">
-        <h2 class="thq-heading-2 contact-text">{{ heading1 }}</h2>
-      </div>
-    </div>
-    <div class="contact-content2 thq-flex-row">
-      <div class="contact-container1">
-        <iframe
-          [attr.src]="location1GoogleMap"
-          title="Map"
-          class="contact-iframe"
-        ></iframe>
-      </div>
-      <div class="contact-container2">
-        <h3 class="contact-text1 thq-heading-3">{{ location2 }}</h3>
-        <p class="contact-text2 thq-body-large">{{ location2Details }}</p>
-        <div class="contact-container3">
-          <span class="thq-button-flat thq-body-small">Get directions</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h1>Contact Us</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
 </div>
