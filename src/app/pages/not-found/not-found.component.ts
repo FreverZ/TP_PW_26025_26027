@@ -9,9 +9,3 @@ export class NotFoundComponent {
   rawu11s: string = `<a href="https://example.com" target="_blank">Example</a>`;
 }
 
-@NgModule({
-  declarations: [NotFoundComponent],
-  imports: [],
-  exports: [NotFoundComponent]
-})
-export class NotFoundModule {}

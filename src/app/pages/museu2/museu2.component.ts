@@ -8,9 +8,3 @@ import { Component, NgModule } from '@angular/core';
 export class Museu2Component {
   raw4wof: string = `<a href="https://example.com" target="_blank">Example</a>`;
 }
-@NgModule({
-  declarations: [Museu2Component],
-  imports: [],
-  exports: [Museu2Component]
-})
-export class Museu2Module {}

@@ -8,7 +8,7 @@ import { Museu1Component } from './pages/museu1/museu1.component';
 import { Museu2Component } from './pages/museu2/museu2.component';
 import { Museu3Component } from './pages/museu3/museu3.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
@@ -23,4 +23,3 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-

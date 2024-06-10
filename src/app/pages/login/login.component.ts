@@ -9,8 +9,3 @@ export class LoginComponent {
   rawu9qv: string = '<a href="https://example.com" target="_blank">Example</a>';
 }
 
-@NgModule({
-  declarations: [LoginComponent],
-  exports: [LoginComponent]
-})
-export class LoginModule {}

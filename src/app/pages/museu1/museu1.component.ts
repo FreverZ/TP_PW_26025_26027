@@ -9,9 +9,3 @@ export class Museu1Component {
   rawu11s: string = `<a href="https://example.com" target="_blank">Example</a>`;
 }
 
-@NgModule({
-  declarations: [Museu1Component],
-  imports: [],
-  exports: [Museu1Component]
-})
-export class Museu1Module {}

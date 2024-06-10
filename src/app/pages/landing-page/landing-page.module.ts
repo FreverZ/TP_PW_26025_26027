@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { LandingPageComponent } from './landing-page.component';
+import { SharedModule } from '../shared/shared.module';
+import { ComponentsModule } from "../../components/components.module";
 
-@Component({
-  selector: 'app-landing-page',
-  templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css']
+@NgModule({
+    declarations: [
+        LandingPageComponent
+    ],
+    exports: [
+        LandingPageComponent
+    ],
+    imports: [
+        CommonModule,
+        SharedModule,
+        ComponentsModule
+    ]
 })
-export class LandingPageComponent {
-  rawu9qv: string = '<a href="https://example.com" target="_blank">Example</a>';
-}
+export class LandingPageModule { }

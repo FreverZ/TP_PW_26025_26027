@@ -7,10 +7,5 @@ import { Component, NgModule } from '@angular/core';
 })
 export class RegisterComponent {
   rawu9qv: string = '<a href="https://example.com" target="_blank">Example</a>';
+rawqzys: any;
 }
-@NgModule({
-  declarations: [RegisterComponent],
-  exports: [RegisterComponent]
-})
-export class RegisterModule {}
-
