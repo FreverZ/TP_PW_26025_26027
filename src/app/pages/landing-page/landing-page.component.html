@@ -35,16 +35,14 @@
         <h1 class="cardsH1">Os mais conhecidos</h1>
         <span class="landing-page-text" style="color: black;">Recomendado</span>
         <div class="landing-page-cards-container" style="padding-bottom: 50px; padding-top: 50px;">
-            <div class="place-card-container">
-                <img src="https://img.freepik.com/vetores-premium/vector-de-gradiente-de-logotipo-colorido-de-passaro_1131634-35.jpg?size=338&ext=jpg&ga=GA1.1.2116175301.1717891200&semt=ais_user" class="place-card-image" />
-                <div class="place-card-container1">
-                    <span class="place-card-text" style="font-family: sans-serif;">Museu Calouste Gulbenkian</span>
-                    <span class="place-card-text1" style="font-family: sans-serif;">Explora a riqueza da arte mundial no Museu Calouste Gulbenkian, onde seis mil obras aguardam para encantar seus sentidos.</span>
-                    <div class="outline-button-container">
-                        <button class="btn-container btn-custom btn" routerLink="/museums">Descobrir mais</button>
-                    </div>
-                </div>
-            </div>
+            <place-card 
+                [image]="'https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg'" 
+                [imageAlt]="'https://cdn.discordapp.com/attachments/1239610282699919512/1249711260698677340/logo.png'" 
+                [city]="'Lixoboa'" 
+                [description]="'Qualquer merda, lá é so ratos de qlqr maneira'">
+            </place-card>
+            <place-card></place-card>
+            <place-card></place-card>
             <!-- Repeat similar structure for other museums -->
         </div>
         <div class="landing-page-cards-container" style="padding-bottom: 50px;">

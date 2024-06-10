@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class PlaceCardComponent {
   @Input() image: string = 'https://images.unsplash.com/photo-1514924013411-cbf25faa35bb?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1000';
   @Input() imageAlt: string = 'image';
-  @Input() city: string = 'City Name';
-  @Input() description: string = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.';
+  @Input() city: string = 'city name';
+  @Input() description: string = 'description of the city';
+  @Input() button: string = 'Descobrir mais...';
 }

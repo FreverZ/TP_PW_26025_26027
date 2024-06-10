@@ -1,14 +1,20 @@
 .place-card {
   border: 1px solid #ddd;
+  width: 300px;
+  height: 500px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+.place-card .solid-button-container {
+  display: inline-block;
+}
+
 .place-card-image {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
 .place-card-city {

@@ -1,6 +1,7 @@
 .solid-button-container {
   display: flex;
   position: relative;
+  text-align: center;
 }
 
 .solid-button-button {
@@ -16,4 +17,9 @@
 
 .solid-button-root-class-name {
   margin-left: var(--dl-space-space-unit);
+}
+
+.solid-button-button:hover {
+  background-color: #bb002c;
+  transition: 0.3s ease-in-out;
 }
